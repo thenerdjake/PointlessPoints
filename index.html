@@ -8,24 +8,45 @@
 
     
 <body>
-    <h1 header>Just Another Clicker Game</h1>
-    <h2>Total Points: </h2> <span id="totalPoints">0</span>
-    <h4>Pointless Points: </h4> <span id="pointlessPoints">0</span>
-    <h4>Pointlesser Points: </h4> <span id="pointlesserPoints">0</span>
-    <div>
-        <button type="button" onclick="manualClickPointless()">Click for a Pointless Point</button>
+    <div class="container">
+        <div class="topbar">
+            <h1 header>Pointless Points</h1>
+            <span id="totalPoints">0</span>
+            <div class="scorebar">
+                <div class="scoresheet">
+                    <p>Pointless Points: 
+                    <span id="pointlessPoints">0</span>
+                    </p>
+                </div>
+                <div class="scoresheet">
+                    <p>Pointlesser Points: 
+                    <span id="pointlesserPoints">0</span>
+                    </p>
+                </div>
+                <div class="scoresheet">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage">
+
+            <div>
+                <button type="button" onclick="manualClickPointless()">Click for a Pointless Point</button>
+            </div>
+            <div>
+                <button type="button" onclick="buyAutoPoint()">Click to buy Auto Point <br>Cost: <span id="autoPointCost">5</span> Pointless Points</button>
+            </div>
+            <div>
+                <button type="button" onclick="increaseClickPower()">Click to increase Click Power<br>Cost: <span id="clickPowerCost">50</span> Pointless Points</button>
+            </div>
+            <div>
+                AutoPoint: <span id="autoPoint">0</span>
+            </div>
+
+        </div>
     </div>
-    <div>
-        <button type="button" onclick="buyAutoPoint()">Click to buy Auto Point <br>Cost: <span id="autoPointCost">5</span> Pointless Points</button>
-    </div>
-    <div>
-        <button type="button" onclick="increaseClickPower()">Click to increase Click Power<br>Cost: <span id="clickPowerCost">50</span> Pointless Points</button>
-    </div>
-    <div>
-        AutoPoint: <span id="autoPoint">0</span>
-    </div>
-    
-    
     <script src="scripts/main.js"></script>
 </body>
     
