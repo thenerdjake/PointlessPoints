@@ -14,37 +14,53 @@
             <span id="totalPoints">0</span>
             <div class="scorebar">
                 <div class="scoresheet">
-                    <p>Pointless Points: 
-                    <span id="pointlessPoints">0</span>
+                    <p>Points: 
+                    <span id="points">0</span>
                     </p>
                 </div>
                 <div class="scoresheet">
-                    <p>Pointlesser Points: 
-                    <span id="pointlesserPoints">0</span>
+                    <p>Super Points: 
+                    <span id="superPoints">0</span>
                     </p>
                 </div>
                 <div class="scoresheet">
-                    <p>
-
+                    <p>Ultra Mega Points!: 
+                        <span id="ultraMegaPoints">0</span>
                     </p>
                 </div>
             </div>
         </div>
         <div class="mainpage">
+            <div class=column>
+                <button type="button" onclick="manualClickPoint()">
+                    Click for a Point!
+                    <br>
+                    Cost: Free
+                    <br>
+                    Points per Click: <span id="clickPower">1</span>
+                </button>
 
-            <div>
-                <button type="button" onclick="manualClickPointless()">Click for a Pointless Point</button>
+                <div class="textbox">
+                    <p>
+                        <button type="button" onclick="buyautoclick()">Click to buy Auto Point </button>
+                        Autoclicker
+                        <br>
+                        Cost: <span id="autoclickCost">5</span> Points
+                        <br>
+                        Owned: <span id="autoclick">0</span>
+                    </p>
+                </div>
+                <div class="textbox">
+                    <button type="button" onclick="increaseClickPower()">Click to increase Click Power<br>Cost: <span id="clickPowerCost">50</span> Pointless Points</button>
+                    
+                </div>
             </div>
-            <div>
-                <button type="button" onclick="buyAutoPoint()">Click to buy Auto Point <br>Cost: <span id="autoPointCost">5</span> Pointless Points</button>
-            </div>
-            <div>
-                <button type="button" onclick="increaseClickPower()">Click to increase Click Power<br>Cost: <span id="clickPowerCost">50</span> Pointless Points</button>
-            </div>
-            <div>
-                AutoPoint: <span id="autoPoint">0</span>
-            </div>
+            <div class="column">
 
+            </div>
+            <div class="column">
+                
+            </div>
         </div>
     </div>
     <script src="scripts/main.js"></script>

@@ -4,56 +4,54 @@
 //"use strict";
 
 //Declaring Variables
-var i, clickPower, totalPoints, pointlessPoints, pointlesserPoints, autoPoint, autoPointValue, autoPointer, autoPointerValue,  manualClickPointlessPoints, tempPointlessPoints, tempPointlesserPoints, autoPointCost, clickPowerCost;
+var i, clickPower, totalPoints, points, pointlesserPoints, autoclick, autoclickValue, autoclicker, autoclickerValue,  manualClickPoints, temppoints, tempPointlesserPoints, autoclickCost, clickPowerCost;
 
 
 function update() {
-    tempPointlessPoints = 0;
-    tempPointlesserPoints = 0;
+    temppoints = 0;
     
-    tempPointlessPoints += ( manualClickPointlessPoints * clickPower);
-    manualClickPointlessPoints = 0;
+    temppoints += ( manualClickPoints * clickPower);
+    manualClickPoints = 0;
     
-    for (i = 0; i < autoPoint; i++) {
-        tempPointlessPoints += autoPointValue/16;
+    for (i = 0; i < autoclick; i++) {
+        temppoints += autoclickValue/16;
     }
-    for (i = 0; i < autoPointer; i++) {
-        tempPointlesserPoints += autoPointerValue/16;
-    }
+
     
-    tempPointlessPoints += ( manualClickPointlessPoints * clickPower);
-    manualClickPointlessPoints = 0;
+    temppoints += ( manualClickPoints * clickPower);
+    manualClickPoints = 0;
     
-    pointlessPoints += tempPointlessPoints;
-    pointlesserPoints += tempPointlesserPoints;
-    totalPoints += (tempPointlessPoints + tempPointlesserPoints);
+    points += temppoints;
+    totalPoints += (temppoints);
     
 
     document.getElementById("totalPoints").innerHTML = totalPoints.toFixed(0);
-    document.getElementById("pointlessPoints").innerHTML = pointlessPoints.toFixed(0);
-    document.getElementById("pointlesserPoints").innerHTML = pointlesserPoints.toFixed(0);
-    document.getElementById("autoPoint").innerHTML = autoPoint;
-    document.getElementById("autoPointCost").innerHTML = autoPointCost.toFixed(0);
+    document.getElementById("points").innerHTML = points.toFixed(0);
+    document.getElementById("superPoints").innerHTML = pointlesserPoints.toFixed(0);
+    document.getElementById("ultraMegaPoints").innerHTML = pointlesserPoints.toFixed(0);
+    document.getElementById("autoclick").innerHTML = autoclick;
+    document.getElementById("autoclickCost").innerHTML = autoclickCost.toFixed(0);
     document.getElementById("clickPowerCost").innerHTML = clickPowerCost.toFixed(0);
+    document.getElementById("clickPower").innerHTML = clickPower.toFixed(0);
 
 }
 
-function manualClickPointless(){
-    manualClickPointlessPoints++;
+function manualClickPoint(){
+    manualClickPoints++;
 }
 
-function buyAutoPoint(){
-    if (pointlessPoints >= autoPointCost){
-        autoPoint++;
-    pointlessPoints = pointlessPoints - autoPointCost;
-    autoPointCost += autoPointCost/5;
+function buyautoclick(){
+    if (points >= autoclickCost){
+        autoclick++;
+    points = points - autoclickCost;
+    autoclickCost += autoclickCost/5;
     }
 }
 
 function increaseClickPower(){
-    if (pointlessPoints >= clickPowerCost){
+    if (points >= clickPowerCost){
         clickPower = clickPower*10;
-        pointlessPoints -= clickPowerCost;
+        points -= clickPowerCost;
         clickPowerCost = clickPowerCost*15;
     }
 }
@@ -61,12 +59,12 @@ function increaseClickPower(){
 function setup() {
     clickPower = 1;
     totalPoints = 0;
-    pointlessPoints = 100;
+    points = 100;
     pointlesserPoints = 0;
-    manualClickPointlessPoints = 0;
-    autoPoint=0;
-    autoPointValue = 1;
-    autoPointCost = 5;
+    manualClickPoints = 0;
+    autoclick=0;
+    autoclickValue = 1;
+    autoclickCost = 5;
     clickPowerCost = 50;
 }
 
