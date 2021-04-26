@@ -32,52 +32,153 @@
         </div>
         <div class="mainpage">
             <div class=column>
-                <button type="button" onclick="manualClickPoint()">
+                <button type="button" onclick="manualClickPoint()" title="Click me for a free point">
                     Click for a Point!
                     <br>
                     Cost: Free
                     <br>
-                    Points per Click: <span id="clickPower">1</span>
+                    Points per Click: <span id="clickPower"></span>
                 </button>
+                <button type="button" onclick="increaseClickPower()" title="Increasing Click Power also affects autoclickers">
+                    Click to increase Click Power
+                    <br>
+                    Cost: <span id="clickPowerCost"></span> Super Points
+                </button>  
                 <button type="button" onclick="buyAutoClicker()">
                     Click to buy AutoClicker
                     <br>
-                    Cost: <span id="autoClickerCost">5</span> Points
+                    Cost: <span id="autoClickerCost"></span> Points
                     <br>
-                    Owned: <span id="autoClicker">0</span>
+                    Owned: <span id="autoClicker"></span>
                 </button>
                 <button type="button" onclick="buySuperClicker()">
                     Click to buy SuperClicker
                     <br>
-                    Cost: <span id="superClickerCost">5</span> Points
+                    Cost: <span id="superClickerCost"></span> Points
                     <br>
-                    Owned: <span id="superClicker">0</span>
+                    Owned: <span id="superClicker"></span>
                 </button>
                 <button type="button" onclick="buyMegaClicker()">
                     Click to buy MegaClicker
                     <br>
-                    Cost: <span id="megaClickerCost">5</span> Points
+                    Cost: <span id="megaClickerCost"></span> Points
                     <br>
-                    Owned: <span id="megaClicker">0</span>
+                    Owned: <span id="megaClicker"></span>
                 </button>
                 <button type="button" onclick="buyUltraClicker()">
                     Click to buy UltraClicker
                     <br>
-                    Cost: <span id="ultraClickerCost">5</span> Points
+                    Cost: <span id="ultraClickerCost"></span> Points
                     <br>
-                    Owned: <span id="ultraClicker">0</span>
+                    Owned: <span id="ultraClicker"></span>
                 </button>
-                <button type="button" onclick="increaseClickPower()">
-                    Click to increase Click Power
+                <button type="button" onclick="buyClickerCreator()">
+                    Click to buy a Clicker Creater
                     <br>
-                    Cost: <span id="clickPowerCost">50</span> Pointless Points
-                </button>   
+                    Cost: <span id="clickerCreatorCost"></span> Super Points
+                    <br>
+                    Owned: <span id="clickerCreator"></span>
+                </button>
+                <button type="button" onclick="buyClickerUpgrader()">
+                    Click to buy a Clicker Upgrader
+                    <br>
+                    Cost: <span id="clickerUpgraderCost"></span> Super Points
+                    <br>
+                    Owned: <span id="clickerUpgrader"></span>
+                </button>
             </div>
             <div class="column">
-
+                <button type="button" onclick="manualClickSuperPoint()">
+                    Click to get a Super Point!
+                    <br>
+                    Cost: 1 Million Points
+                </button>  
+                <button type="button" onclick="buyPointPower()">
+                    Click to increase Point Power
+                    <br>
+                    Cost: <span id="pointPowerCost"></span> Super Points
+                    <br>
+                    Owned: <span id="pointPower"></span>
+                </button>  
+                <button type="button" onclick="buyAutoPointer()">
+                    Click to buy an AutoPointer
+                    <br>
+                    1000 point per second
+                    <br>
+                    Cost: <span id="autoPointerCost"></span> Super Points
+                    <br>
+                    Owned: <span id="autoPointer"></span>
+                </button>
+                <button type="button" onclick="buySuperPointer()">
+                    Click to buy a SuperPointer
+                    <br>
+                    5000 points per second
+                    <br>
+                    Cost: <span id="superPointerCost"></span> Super Points
+                    <br>
+                    Owned: <span id="superPointer"></span>
+                </button>
+                <button type="button" onclick="buyMegaPointer()">
+                    Click to buy a MegaPointer
+                    <br>
+                    10000 points per second
+                    <br>
+                    Cost: <span id="megaPointerCost"></span> Super Points
+                    <br>
+                    Owned: <span id="megaPointer"></span>
+                </button>
+                <button type="button" onclick="buyUltraPointer()">
+                    Click to buy a UltraPointer
+                    <br>
+                    1 Super Point per Second<br>
+                    Cost: <span id="ultraPointerCost"></span> Super Points
+                    <br>
+                    Owned: <span id="ultraPointer"></span>
+                </button>
             </div>
             <div class="column">
-                
+                <button type="button" onclick="">
+                    Click to buy a Point Pump
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
+                <button type="button" onclick="">
+                    Click to buy a Point Piston
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
+                <button type="button" onclick="">
+                    Click to buy a Point Engine
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
+                <button type="button" onclick="">
+                    Click to buy a Hadron Pointlider
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
+                <button type="button" onclick="">
+                    Click to buy a Point Alchemist
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
+                <button type="button" onclick="">
+                    Click to buy the Big Click
+                    <br>
+                    Cost: <span id=""></span> Super Points
+                    <br>
+                    Owned: <span id=""></span>
+                </button>
             </div>
         </div>
     </div>
